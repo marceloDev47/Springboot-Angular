@@ -8,7 +8,6 @@ import javax.persistence.Table;
 public class Paciente {
 	private Integer idPaciente;
 	private String nombre;
-	private String matricula;
 	
 	public Paciente() {
 		
@@ -25,16 +24,7 @@ public class Paciente {
 	}
 	public void setNombre(String nombre) {
 		this.nombre = nombre;
-	}
-
-	public String getMatricula() {
-		return matricula;
-	}
-
-	public void setMatricula(String matricula) {
-		this.matricula = matricula;
-	}
-	
+	}	
 	
 	
 }
