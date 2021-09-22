@@ -1,4 +1,4 @@
-package com.marcelodev.mediappbackend.model;
+package com.marcelodev.model;
 
 import java.time.LocalDateTime;
 import java.util.List;

@@ -1,4 +1,4 @@
-package com.marcelodev.mediappbackend.model;
+package com.marcelodev.model;
 
 import javax.persistence.Column;
 import javax.persistence.Entity;
@@ -8,32 +8,22 @@ import javax.persistence.Id;
 import javax.persistence.Table;
 
 @Entity
-@Table(name = "examen")
-public class Examen {
+@Table(name = "especialidad")
+public class Especialidad {
+	
 	@Id
 	@GeneratedValue(strategy = GenerationType.IDENTITY)
-	private Integer idExamen;
-	
-	@Column(name = "nombre", nullable = false, length = 50)
-	private String nombre;
+	private Integer idEspecialidad;
 	
 	@Column(name = "descripcion", nullable = false, length = 50)
 	private String descripcion;
 
-	public Integer getIdExamen() {
-		return idExamen;
+	public Integer getIdEspecialidad() {
+		return idEspecialidad;
 	}
 
-	public void setIdExamen(Integer idExamen) {
-		this.idExamen = idExamen;
-	}
-
-	public String getNombre() {
-		return nombre;
-	}
-
-	public void setNombre(String nombre) {
-		this.nombre = nombre;
+	public void setIdEspecialidad(Integer idEspecialidad) {
+		this.idEspecialidad = idEspecialidad;
 	}
 
 	public String getDescripcion() {

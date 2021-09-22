@@ -1,4 +1,4 @@
-package com.marcelodev.mediappbackend.model;
+package com.marcelodev.model;
 
 import javax.persistence.Column;
 import javax.persistence.Entity;
