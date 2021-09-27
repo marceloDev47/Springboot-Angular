@@ -1,6 +1,9 @@
 package com.marcelodev.service;
 
 import java.util.List;
+import java.util.Optional;
+
+import com.marcelodev.model.Paciente;
 
 public interface ICRUD<T> {
 	
@@ -10,7 +13,7 @@ public interface ICRUD<T> {
 
 	void eliminar(int id);
 
-	T listarId(int id);
+	Optional<Paciente> listarId(int id);
 
 	List<T> listar();
 	
