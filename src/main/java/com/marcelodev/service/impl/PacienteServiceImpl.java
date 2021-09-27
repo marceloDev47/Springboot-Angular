@@ -38,7 +38,9 @@ public class PacienteServiceImpl implements IPacienteService{
 
 	@Override
 	public List<Paciente> listar() {
-		return dao.findAll();
+		List<Paciente> pacientes;
+		pacientes = dao.findAll();
+		return pacientes;
 	}
 
 }

@@ -24,12 +24,12 @@ public class PacienteController {
 	@Autowired
 	private IPacienteService service;
 	
-	@GetMapping(produces = "applicarion/json")
+	@GetMapping(produces = "application/json")
 	public List<Paciente> listar(){
 		return service.listar();
 	}
 	
-	@GetMapping(value = "/{id}", produces = "applicarion/json")
+	@GetMapping(value = "/{id}", produces = "application/json")
 	public Optional<Paciente> listarId(@PathVariable Integer id){
 		return service.listarId(id);
 	}
@@ -44,7 +44,7 @@ public class PacienteController {
 		return service.modificar(paciente);
 	}
 	
-	@DeleteMapping
+	@DeleteMapping(value = "/{id}")
 	public void eliminar(@PathVariable Integer id) {
 		service.eliminar(id);
 	}
