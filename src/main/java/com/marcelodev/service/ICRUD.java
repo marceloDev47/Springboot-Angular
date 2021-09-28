@@ -13,7 +13,7 @@ public interface ICRUD<T> {
 
 	void eliminar(int id);
 
-	Optional<Paciente> listarId(int id);
+	Optional<T> listarId(int id);
 
 	List<T> listar();
 	

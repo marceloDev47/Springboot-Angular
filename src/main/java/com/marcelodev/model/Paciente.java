@@ -92,5 +92,17 @@ public class Paciente {
 	public void setEmail(String email) {
 		this.email = email;
 	}
+	
+	/*
+	 * 	{
+	        "idPaciente": "3",
+	        "nombres": "jose luis",
+	        "apellidos": "sanchez",
+	        "dni": "12123999",
+	        "direccion": "san martin 5555",
+	        "telefono": "12345",
+	        "email": "jose@gmail.com"
+    	}
+	 */
 
 }
