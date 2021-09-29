@@ -13,34 +13,34 @@ import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
-import com.marcelodev.model.Especialidad;
-import com.marcelodev.service.IEspecialidadService;
+import com.marcelodev.model.Examen;
+import com.marcelodev.service.IExamenService;
 
 @RestController
-@RequestMapping("/especialidades")
-public class EspecialidadController {
+@RequestMapping("/examenes")
+public class ExamenController {
 	
 	@Autowired
-	private IEspecialidadService service;
+	private IExamenService service;
 	
 	@GetMapping(produces = "application/json")
-	public List<Especialidad> listar(){
+	public List<Examen> listar(){
 		return service.listar();
 	}
 	
 	@GetMapping(value = "/{id}", produces = "application/json")
-	public Optional<Especialidad> listarId(@PathVariable Integer id){
+	public Optional<Examen> listarId(@PathVariable Integer id){
 		return service.listarId(id);
 	}
 	
 	@PostMapping(consumes = "application/json", produces = "application/json")
-	public Especialidad registrar(@RequestBody Especialidad especialidad) {
-		return service.registrar(especialidad);
+	public Examen registrar(@RequestBody Examen examen) {
+		return service.registrar(examen);
 	}
 	
 	@PutMapping(consumes = "application/json", produces = "application/json")
-	public Especialidad modificar(@RequestBody Especialidad especialidad) {
-		return service.modificar(especialidad);
+	public Examen modificar(@RequestBody Examen examen) {
+		return service.modificar(examen);
 	}
 	
 	@DeleteMapping(value = "/{id}")

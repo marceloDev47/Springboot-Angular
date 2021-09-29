@@ -38,9 +38,7 @@ public class EspecialidadServiceImpl implements IEspecialidadService{
 
 	@Override
 	public List<Especialidad> listar() {
-		List<Especialidad> Especialidads;
-		Especialidads = dao.findAll();
-		return Especialidads;
+		return dao.findAll();
 	}
 
 }

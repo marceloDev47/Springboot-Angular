@@ -35,13 +35,13 @@ public class MedicoController {
 	}
 	
 	@PostMapping(consumes = "application/json", produces = "application/json")
-	public Medico registrar(@RequestBody Medico Medico) {
-		return service.registrar(Medico);
+	public Medico registrar(@RequestBody Medico medico) {
+		return service.registrar(medico);
 	}
 	
 	@PutMapping(consumes = "application/json", produces = "application/json")
-	public Medico modificar(@RequestBody Medico Medico) {
-		return service.modificar(Medico);
+	public Medico modificar(@RequestBody Medico medico) {
+		return service.modificar(medico);
 	}
 	
 	@DeleteMapping(value = "/{id}")

@@ -41,9 +41,7 @@ public class ConsultaServiceImpl implements IConsultaService{
 
 	@Override
 	public List<Consulta> listar() {
-		List<Consulta> Consultas;
-		Consultas = dao.findAll();
-		return Consultas;
+		return dao.findAll();
 	}
 
 }

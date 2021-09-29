@@ -6,38 +6,38 @@ import java.util.Optional;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
-import com.marcelodev.dao.IMedicoDAO;
-import com.marcelodev.model.Medico;
-import com.marcelodev.service.IMedicoService;
+import com.marcelodev.dao.IExamenDAO;
+import com.marcelodev.model.Examen;
+import com.marcelodev.service.IExamenService;
 
 @Service
-public class MedicoServiceImpl implements IMedicoService{
+public class ExamenServiceImpl implements IExamenService {
 
 	@Autowired
-	private IMedicoDAO dao;
-	
+	private IExamenDAO dao;
+
 	@Override
-	public Medico registrar(Medico p) {
+	public Examen registrar(Examen p) {
 		return dao.save(p);
 	}
 
 	@Override
-	public Medico modificar(Medico p) {
+	public Examen modificar(Examen p) {
 		return dao.save(p);
 	}
 
 	@Override
 	public void eliminar(int id) {
-		dao.deleteById(id);		
+		dao.deleteById(id);
 	}
 
 	@Override
-	public Optional<Medico> listarId(int id) {
+	public Optional<Examen> listarId(int id) {
 		return dao.findById(id);
 	}
 
 	@Override
-	public List<Medico> listar() {
+	public List<Examen> listar() {
 		return dao.findAll();
 	}
 
