@@ -57,5 +57,11 @@ public class Medico {
 	}
 	
 	
-
+	/*
+	   {
+	    "nombres": "Goerge",
+	    "apellidos": "Phillip",
+	    "cmp": "12994599"
+		}
+	 */
 }

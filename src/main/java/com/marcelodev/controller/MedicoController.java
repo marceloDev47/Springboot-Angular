@@ -18,7 +18,7 @@ import com.marcelodev.service.IMedicoService;
 import com.marcelodev.service.impl.MedicoServiceImpl;
 
 @RestController
-@RequestMapping("/Medicos")
+@RequestMapping("/medicos")
 public class MedicoController {
 	
 	@Autowired
