@@ -34,5 +34,9 @@ public class Especialidad {
 		this.descripcion = descripcion;
 	}
 	
-	
+	/*
+	 	{
+		    "descripcion": "Traumatologia"
+		}
+	 */
 }
