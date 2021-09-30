@@ -90,6 +90,23 @@ public class Consulta {
 		this.detalleConsulta = detalleConsulta;
 	}
 	
+	/*
+	   {
+		   "paciente": {
+		       "idPaciente":1
+		   },
+		   "medico": {
+		       "idMedico": 1
+		   },
+		   "especialidad": {
+		       "idEspecialidad": 1
+		   },
+		   "fecha": "2021-01-01T15:00:00.000Z",
+		   "detalleConsulta":[
+		       {"diagnostico": "resfrío", "tratamiento": "té con limón" },
+		       {"diagnostico": "gripe", "tratamiento": "paracetamol" }
+		   ]
+		}
+	 */
 	
-
 }
