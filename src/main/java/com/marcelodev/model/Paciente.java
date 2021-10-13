@@ -95,7 +95,6 @@ public class Paciente {
 	
 	/*
 	 * 	{
-	        "idPaciente": "3",
 	        "nombres": "jose luis",
 	        "apellidos": "sanchez",
 	        "dni": "12123999",
