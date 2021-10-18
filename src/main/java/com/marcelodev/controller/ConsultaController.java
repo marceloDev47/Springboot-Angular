@@ -13,6 +13,7 @@ import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
+import com.marcelodev.dto.ConsultaListaExamenDTO;
 import com.marcelodev.model.Consulta;
 import com.marcelodev.service.IConsultaService;
 
@@ -34,8 +35,8 @@ public class ConsultaController {
 	}
 	
 	@PostMapping(consumes = "application/json", produces = "application/json")
-	public Consulta registrar(@RequestBody Consulta consulta) {
-		return service.registrar(consulta);
+	public Consulta registrar(@RequestBody ConsultaListaExamenDTO consultaDTO) {
+		return service.registrarTransaccional(consultaDTO);
 	}
 	
 	@PutMapping(consumes = "application/json", produces = "application/json")

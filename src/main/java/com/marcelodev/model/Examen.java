@@ -69,5 +69,12 @@ public class Examen {
 		return true;
 	}
 	
+	/*
+	  {
+	  "nombre" : "Sangre",
+	  "descripcion" : "Examen de sangre"
+	  }
+	 
+	 */
 	
 }
