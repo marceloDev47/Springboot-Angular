@@ -6,6 +6,7 @@ import javax.persistence.GeneratedValue;
 import javax.persistence.GenerationType;
 import javax.persistence.Id;
 import javax.persistence.Table;
+import javax.validation.constraints.Size;
 
 @Entity
 @Table(name = "pacientes")
@@ -14,13 +15,16 @@ public class Paciente {
 	@Id
 	@GeneratedValue(strategy = GenerationType.IDENTITY)
 	private Integer idPaciente;
-
+	
+	@Size(min = 3, message = "Nombres de tener al menos 3 caracteres")
 	@Column(name = "nombres", nullable = false, length = 50)
 	private String nombres;
 
+	@Size(min = 3, message = "Apellidos debe tener al menos 3 caracteres")
 	@Column(name = "apellidos", nullable = false, length = 50)
 	private String apellidos;
 
+	@Size(min = 8, message = "DNI debe tener al menos 8 caracteres")
 	@Column(name = "dni", nullable = false, length = 8)
 	private String dni;
 
