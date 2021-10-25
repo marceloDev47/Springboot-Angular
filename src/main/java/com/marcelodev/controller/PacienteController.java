@@ -20,8 +20,9 @@ import org.springframework.web.servlet.support.ServletUriComponentsBuilder;
 import com.marcelodev.exception.ModeloNotFoundException;
 import com.marcelodev.model.Paciente;
 import com.marcelodev.service.IPacienteService;
-import com.marcelodev.service.impl.PacienteServiceImpl;
+import io.swagger.annotations.ApiModel;
 
+@ApiModel(description = "Informacion del paciente")
 @RestController
 @RequestMapping("/pacientes")
 public class PacienteController {
